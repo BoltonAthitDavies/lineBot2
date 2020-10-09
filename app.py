@@ -13,9 +13,9 @@ def index():
         for line in f.readlines():
             print(line)
             a = line.split(",")
-           if(a[0]=="00001"):
+            if(a[0]=="00001"):
                return a[4]
-      f.close()
+        f.close()
     except Exception:
         return "Could not read to file"
     
